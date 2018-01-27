@@ -18,6 +18,8 @@ Store.loadStoreName=function(){ /*adding function to request the store name*/
 		    var nameHolder=$('#store-name');
 		    nameHolder.empty();
 		    nameHolder.text(store_n);
+		    var e_mail=store_n+"@"+store_n+".com";
+		    $(".buy form input[name='business']").val(e_mail);
 		}
     },"json")
 }
